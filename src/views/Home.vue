@@ -1,18 +1,25 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <AddWeight />
+    <WeightHistory />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import AddWeight from "../components/AddWeight";
+import WeightHistory from "../components/WeightHistory";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld
+    AddWeight,
+    WeightHistory
   }
 };
 </script>
+
+<style scoped>
+.home {
+  display: flex;
+}
+</style>

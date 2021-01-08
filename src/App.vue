@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <md-toolbar class="md-primary">
+      <router-link class="md-title" to="/">Home</router-link>
+    </md-toolbar>
+    <div id="nav"></div>
     <router-view />
   </div>
 </template>
